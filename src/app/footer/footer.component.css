@@ -1,0 +1,25 @@
+.footer-toolbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin: 8px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #5d5a5ad4;
+    color: #fff;
+  }
+  
+  .footer-text {
+    font-size: 14px;
+  }
+  
+  .footer-link {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+  }
+  
+  .spacer {
+    flex: 1 1 auto;
+  }
+  

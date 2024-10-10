@@ -1,0 +1,90 @@
+<mat-toolbar  class="header-toolbar">
+    <div class="logo-container">
+      <img src="assets/logo.webp" class="logo" alt="Toyota Logo">
+      <span>TOYOTA DATA INTEGRATION PLATFORM</span>
+    </div>
+  
+    <div class="nav-links">
+      <a class="nav-link" [class.active]="selectedTab === 'home'" (click)="selectTab('home')">Home</a>
+      <a class="nav-link" [class.active]="selectedTab === 'reports'" (click)="selectTab('reports')">Reports</a>
+    </div>
+  
+    <div class="user-info">
+      <span class="user-name">John Doe</span>
+      <mat-icon>account_circle</mat-icon>
+    </div>
+  </mat-toolbar>
+  
+  <mat-card class="dashboard-container">
+    <h2 class="dashboard-text" >Dashboard</h2>
+    <div class="card-row">
+      <mat-card class="dashboard-item">
+        <h3>Domain</h3>
+        <p>120</p>
+      </mat-card>
+      <mat-card class="dashboard-item">
+        <h3>AD Group</h3>
+        <p>009</p>
+      </mat-card>
+      <mat-card class="dashboard-item">
+        <h3>Schema</h3>
+        <p>100</p>
+      </mat-card>
+      <mat-card class="dashboard-item">
+        <h3>Table</h3>
+        <p>1120</p>
+      </mat-card>
+    </div>
+  </mat-card>
+  
+  <mat-card class="filter-card">
+    <h2>Filter from the list or type to search in filters</h2>
+    <div class="filter-container">
+      <mat-form-field>
+        <mat-label>Domain</mat-label>
+        <mat-select>
+          <mat-option>Option 1</mat-option>
+          <mat-option>Option 2</mat-option>
+        </mat-select>
+      </mat-form-field>
+  
+      <mat-form-field>
+        <mat-label>AD Group</mat-label>
+        <mat-select>
+          <mat-option>Option 1</mat-option>
+          <mat-option>Option 2</mat-option>
+        </mat-select>
+      </mat-form-field>
+  
+      <button mat-raised-button class="audit-btn1">Send Audit Request</button>
+      <button mat-raised-button>Search</button>
+    </div>
+  </mat-card>
+  
+  <mat-card class="search-result-card">
+    <h2>Search result based on Domain and AD Group selection</h2>
+    <div class="search-result-container">
+      <mat-form-field>
+        <mat-label>Schema</mat-label>
+        <mat-select>
+          <mat-option>Option 1</mat-option>
+          <mat-option>Option 2</mat-option>
+        </mat-select>
+      </mat-form-field>
+  
+      <mat-form-field>
+        <mat-label>Table</mat-label>
+        <mat-select>
+          <mat-option>Option 1</mat-option>
+          <mat-option>Option 2</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    
+    <div class="result-grid">
+      Grid populate with User Info
+    </div>
+  
+    <button mat-raised-button class="audit-btn">Send Audit Request</button>
+  </mat-card>
+  
